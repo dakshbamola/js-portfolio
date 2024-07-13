@@ -125,3 +125,108 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+.aboutul {
+  text-align: left;
+  columns: 2;
+  font-size: 1.25rem;
+  margin: 2rem 3rem;
+  column-gap: 3rem;
+}
+
+.aboutmyself {
+  background-color: white;
+  width: 50%;
+  padding: 4rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.portfolioimg {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.maintitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 1rem;
+  color: rgb(218, 217, 217);
+}
+
+.headercss {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutul {
+    margin: 1rem 1.5rem;
+    column-gap: 3.5rem;
+  }
+
+  .aboutmyself {
+    width: 60%;
+  }
+
+  .portfolioimg {
+    height: 0;
+    width: 0;
+  }
+
+  .maintitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin-left: -25px;
+  }
+
+  .maintitle {
+    font-size: 1.1rem;
+    margin-left: -25px;
+  }
+
+  .aboutul {
+    margin: 0rem 0rem;
+    column-gap: 4rem;
+    font-size: 1.1rem;
+  }
+
+  .aboutmyself {
+    width: 70%;
+    padding: 2rem;
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  .portfolioimg {
+    height: 0;
+    width: 0;
+  }
+
+  .headercss {
+    gap: 1.5rem;
+    width: 90%;
+  }
+}
